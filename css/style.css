@@ -1,0 +1,213 @@
+@import url('https://fonts.google.com/specimen/Roboto?query=roboto');
+
+*{
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.main-header{
+  height: 100vh;
+  color: white;
+  background-color: rgba(0,0,0,.6);
+  background-image: url("/background\ image.jpg");
+  background-blend-mode: multiply;
+  background-size:cover;
+  padding-bottom: 35px;
+}
+.artist-name{
+  color: #1fdf64;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 300px ;
+  font-weight: normal;
+}
+.artist-name-large
+{
+  font-size:5em;
+}
+
+.main-nav{
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 5px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.nav-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav a{
+  display: inline-block;
+  margin: .5em;
+  color: white;
+  text-decoration: none;
+}
+
+
+.nav a:active{
+  opacity: 0.5;
+}
+
+.nav-item {
+  position: relative;
+  text-decoration: none; /* Remove any underline from the text */
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: width 0.25s ease-out; /* Set the transition duration and easing function */
+}
+
+.nav-item:hover::after {
+  width: 100%; /* Set the width to 100% when hovering */
+}
+
+.section-header{
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+}
+
+.header-content
+{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #1fdf64;
+}
+
+.section-container label {
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+.artist-input {
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition-duration: 0.3s;
+  background-color: #121212;
+  color: white;
+}
+
+.artist-input:focus{
+  transform: translateX(20px) translateY(20px);
+  box-shadow: -10px 5px 0 rgba(255, 255, 255, 1);
+}
+.top-artists{
+  margin-top: 3.5em;
+  font-size: 1.5em;
+  padding: 0.75em;
+  border: 3px solid rgb(255, 0, 0); /* Set the border width and color */
+  border-radius: 13px; /* Round the corners */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center the text */
+  font-size: 24px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  animation: animate-rgb 1.5s ease-in-out infinite; /* Add an animation */
+}
+@keyframes animate-rgb {
+  0%   { border-color: rgb(255, 0, 0); }
+  10%  { border-color: rgb(255, 127, 0); }
+  20%  { border-color: rgb(255, 255, 0); }
+  30%  { border-color: rgb(0, 255, 0); }
+  40%  { border-color: rgb(0, 127, 255); }
+  50%  { border-color: rgb(0, 0, 255); }
+  60%  { border-color: rgb(127, 0, 255); }
+  70%  { border-color: rgb(255, 0, 127); }
+  80%  { border-color: rgb(255, 0, 0); }
+  100% { border-color: rgb(255, 0, 0); }
+}
+
+.top-artists:hover {
+  border-color: #1fdf64; /* Change the border color on hover */
+}
+
+
+
+.top-artists li{
+  padding: 5px;
+}
+
+.top-artists a{
+  color: #1fdf64;
+  text-decoration: none;
+}
+
+.top-artists a:hover{
+  color: rgba(31,223,100,.8);
+  text-decoration: none;
+}
+
+footer {
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+}
+p.footer-name{
+  font-size: 1em;
+  font-weight: bold;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 10px;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
