@@ -31,16 +31,6 @@
     font-size: 4em;
     text-align: center;
 }
-.signin-input {
-    width: 200px;
-    height: 50px;
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 5px;
-    border: 2px solid white;
-    background-color:#1fdf64;
-    color: white;
-  }
   body {
     margin: 0; 
     padding: 0;
