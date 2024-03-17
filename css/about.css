@@ -1,0 +1,85 @@
+.main-header{
+    height: 60vh;
+    color: white;
+    background-color: rgba(0,0,0,.6);
+    background-image: url("/sp.jpeg");
+    background-blend-mode: multiply;
+    background-size:cover;
+    padding-bottom: 35px;
+  }
+
+.header-one{
+    text-align: left;
+    text-decoration: wavy;
+    font-size: 7em;
+}
+
+.text{
+    font-size: 4em;
+    color: #1fdf64;
+}
+.styling{
+    font-size: 2em;
+    font-style: italic;
+    color: aliceblue;
+}
+.content{
+    font-size: 1em;
+    background-color: black;
+}
+.about-us-header{
+    font-size: 4em;
+    text-align: center;
+}
+.signin-input {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#1fdf64;
+    color: white;
+  }
+  body {
+    margin: 0; 
+    padding: 0;
+}
+section {
+    margin-top: 0; 
+    padding: 20px;
+    background-color:rgb(18, 17, 17);
+    text-align: right;
+}
+blockquote {
+    color: aliceblue;
+    font-style: italic;
+    padding: 20px;
+    background-color:rgb(18, 17, 17);
+    margin: 20px auto; 
+    max-width: 800px; 
+    text-align: center; 
+}
+img {
+    max-width: 20%; 
+    height: auto; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin: 20px ; 
+    
+}
+.mainheader{
+    height: 80vh;
+    color: white;
+    background-color: rgba(0,0,0,.6);
+    background-image: url("/sp.jpeg");
+    background-blend-mode: multiply;
+    background-size:cover;
+    padding-bottom: 35px;
+  }
+.secondsection{
+    font-size: 3em;
+    color: white ;
+    text-align: left;
+    
+}
