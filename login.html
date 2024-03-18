@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="/css/login.css">
-  </head>
-  <body>
-    <h1>Login Page</h1>
-    <form action="/login" method="post">
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password"><br>
-      <input type="submit" value="Login">
-    </form>
-    <p>Don't have an account? <a href="/signup">Sign up</a></p>
-  </body>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+	<div class="container">
+		<form class="login-form">
+			<h2>Login</h2>
+			<div class="input-container">
+				<input type="text" class="input-field" required>
+				<label class="input-label">Username</label>
+			</div>
+			<div class="input-container">
+				<input type="password" class="input-field" required>
+				<label class="input-label">Password</label>
+			</div>
+			<button type="submit" class="login-button">Login</button>
+			<p class="forgot-password">Forgot Username/Password?</p>
+			<p class="signup-option">Don't have an account? <a href="#">Sign up</a></p>
+		</form>
+	</div>
+</body>
 </html>
