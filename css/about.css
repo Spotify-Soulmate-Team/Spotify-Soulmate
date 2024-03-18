@@ -1,3 +1,8 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
 .main-header{
     height: 65vh;
     color: white;
@@ -9,24 +14,9 @@
   }
 .header-one{
     text-align: left;
-    text-decoration: wavy;
     font-size: 7em;
 }
 
-.text{
-    font-size: 4em;
-    color: #1fdf64;
-    /* #86d5a3 */
-}
-.styling{
-    font-size: 2em;
-    font-style: italic;
-    color: aliceblue;
-}
-.content{
-    font-size: 1em;
-    background-color: black;
-}
 .header-content-div{
     display: flex;
     flex-direction: column;
@@ -60,25 +50,22 @@
     color: white;
     background-color: #1fdf64;
 }
-.signin-input {
-    width: 200px;
-    height: 50px;
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 5px;
-    border: 2px solid white;
-    background-color:#1fdf64;
-    color: white;
-  }
-  body {
-    margin: 0; 
-    padding: 0;
-}
+
 section {
     margin-top: 0; 
     padding: 20px;
     background-color:rgb(18, 17, 17);
     text-align: right;
+}
+.text{
+    font-size: 4em;
+    color: #1fdf64;
+    font-style: italic;
+    /* #86d5a3 */
+}
+.styling{
+    font-size: 2em;
+    color: aliceblue;
 }
 .texting{
     color: aliceblue;
@@ -99,15 +86,7 @@ img {
     margin: 20px ; 
     
 }
-.mainheader{
-    height: 80vh;
-    color: white;
-    background-color: rgba(0,0,0,.6);
-    background-image: url("/header-img.jpeg");
-    background-blend-mode: multiply;
-    background-size:cover;
-    padding-bottom: 35px;
-  }
+
 .section-one
 {
     display: flex;
