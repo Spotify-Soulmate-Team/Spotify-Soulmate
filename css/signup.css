@@ -1,3 +1,5 @@
+@import url('https://fonts.google.com/selection?query=lato');
+
 * {
 	box-sizing: border-box;
 }
@@ -72,6 +74,11 @@ body {
   color: #1fdf64;
 }
 
+.upload-photo{
+	display: block;
+	padding-bottom: 5px ;
+	margin-bottom: 5px;
+}
 .signup-button {
 	padding: 10px;
   margin: 10px 0;
@@ -97,4 +104,16 @@ select.input-field {
 	background-position: right 10px center;
 	background-size: 12px;
 	padding-right: 30px;
+}
+
+.login-option {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: white;
+}
+
+.login-option a {
+	color: #4CAF50;
+	text-decoration: none;
 }
