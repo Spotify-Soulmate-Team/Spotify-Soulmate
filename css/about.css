@@ -1,13 +1,12 @@
 .main-header{
-    height: 60vh;
+    height: 50vh;
     color: white;
     background-color: rgba(0,0,0,.6);
     background-image: url("/sp.jpeg");
     background-blend-mode: multiply;
     background-size:cover;
-    padding-bottom: 35px;
+    padding: 20px;
   }
-
 .header-one{
     text-align: left;
     text-decoration: wavy;
@@ -16,7 +15,7 @@
 
 .text{
     font-size: 4em;
-    color: #1fdf64;
+    color: #86d5a3;
 }
 .styling{
     font-size: 2em;
@@ -31,6 +30,16 @@
     font-size: 4em;
     text-align: center;
 }
+.signin-input {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#1fdf64;
+    color: white;
+  }
   body {
     margin: 0; 
     padding: 0;
@@ -41,7 +50,7 @@ section {
     background-color:rgb(18, 17, 17);
     text-align: right;
 }
-blockquote {
+.texting{
     color: aliceblue;
     font-style: italic;
     padding: 20px;
@@ -49,6 +58,8 @@ blockquote {
     margin: 20px auto; 
     max-width: 800px; 
     text-align: center; 
+    padding-top: 125pxpx;
+    padding-right: 150px;
 }
 img {
     max-width: 20%; 
@@ -67,9 +78,41 @@ img {
     background-size:cover;
     padding-bottom: 35px;
   }
-.secondsection{
-    font-size: 3em;
-    color: white ;
+.section-one
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.image-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    width: 700px;
+
+}
+.section-img
+{
+    border: none;
+    max-width: 300px;
+}
+.section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.division{
+    background-image: url(/sp.jpeg);
+    background-blend-mode: multiply;
+    background-size:cover;
+    background-color: rgba(0,0,0,.6);
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: left;
-    
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
 }
