@@ -1,11 +1,11 @@
 .main-header{
-    height: 50vh;
+    height: 65vh;
     color: white;
     background-color: rgba(0,0,0,.6);
-    background-image: url("/sp.jpeg");
+    background-image: url("/header-img.jpeg");
     background-blend-mode: multiply;
     background-size:cover;
-    padding: 20px;
+    padding: 10px;
   }
 .header-one{
     text-align: left;
@@ -15,7 +15,8 @@
 
 .text{
     font-size: 4em;
-    color: #86d5a3;
+    color: #1fdf64;
+    /* #86d5a3 */
 }
 .styling{
     font-size: 2em;
@@ -26,9 +27,38 @@
     font-size: 1em;
     background-color: black;
 }
+.header-content-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .about-us-header{
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
+}
+.header-content{
+    font-size: 1.6em;
+    text-align: center;
+}
+.button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-button{
+    width: 180px;
+    padding: 1em;
+    background-color: transparent;
+    color: #1fdf64;
+    border: 2px solid #1fdf64;
+    border-radius: 40px;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+.header-button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #1fdf64;
 }
 .signin-input {
     width: 200px;
@@ -58,7 +88,7 @@ section {
     margin: 20px auto; 
     max-width: 800px; 
     text-align: center; 
-    padding-top: 125pxpx;
+    padding-top: 125px;
     padding-right: 150px;
 }
 img {
@@ -73,7 +103,7 @@ img {
     height: 80vh;
     color: white;
     background-color: rgba(0,0,0,.6);
-    background-image: url("/sp.jpeg");
+    background-image: url("/header-img.jpeg");
     background-blend-mode: multiply;
     background-size:cover;
     padding-bottom: 35px;
@@ -102,8 +132,11 @@ img {
     flex-direction: column;
     justify-content: center;
 }
+.section-two{
+    padding: 0;
+}
 .division{
-    background-image: url(/sp.jpeg);
+    background-image: url(/header-img.jpeg);
     background-blend-mode: multiply;
     background-size:cover;
     background-color: rgba(0,0,0,.6);
