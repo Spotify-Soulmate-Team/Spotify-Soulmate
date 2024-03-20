@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+}
+
+.header-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/images/Drake.webp);
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 100px;
+  padding-top: 150px;
+}
+
+.header-div{
+  max-width: 650px;
+}
+
+.nickname-div{
+  margin-top: 150px;
+}
+
+.artist-intro{
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.artist-desc{
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.artist-nickname{
+  text-align: left;
+}
+
+.matches-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #121212;
+  color: white;
+  padding: 0px 50px;
+}
+
+.match-heading{
+  font-size: 2em;
+}
+.matches-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.match{
+  width: 250px;
+  height: 300px;
+  padding: 0.5em;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.match-list{
+  list-style-type: none;
+  padding: 0.3em;
+}
+.photo-username-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.match-profile-pic{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: flex-start;
+}
+
+.match-name{
+}

@@ -15,7 +15,7 @@ html, body{
   height: 100vh;
   color: white;
   background-color: rgba(0,0,0,.6);
-  background-image: url("/header-img.jpeg");
+  background-image: url("/images/header-img.jpeg");
   background-blend-mode: multiply;
   background-size:cover;
   padding-bottom: 35px;
