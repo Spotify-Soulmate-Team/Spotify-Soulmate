@@ -13,6 +13,7 @@ body{
   cursor: pointer;
   transition: transform 0.1s ease;
 }
+
 .arrow-link{
   text-decoration: none;
 }
