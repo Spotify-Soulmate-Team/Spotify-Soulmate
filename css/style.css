@@ -41,7 +41,7 @@ html, body{
   padding: 0px 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: flex-end; 
 }
 .nav-content{
   display: flex;

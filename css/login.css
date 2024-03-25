@@ -6,9 +6,9 @@
 
 body {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90vh;
 	margin: 0;
 	background-image: url(/images/header-img.jpeg);
   background-repeat: none;
@@ -16,6 +16,60 @@ body {
   background-blend-mode:multiply;
   background-color: rgba(0,0,0,.6);
 	font-family: lato;
+}
+.main-nav{
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 5px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; 
+}
+.nav-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav a{
+  display: inline-block;
+  margin: .5em;
+  color: white;
+  text-decoration: none;
+}
+
+
+.nav a:active{
+  opacity: 0.5;
+}
+
+.nav-item {
+  position: relative;
+  text-decoration: none; 
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: width 0.25s ease-out; 
+}
+
+.nav-item:hover::after {
+  width: 100%; /* Set the width to 100% when hovering */
+}
+section{
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .container {
   height: 450px;
