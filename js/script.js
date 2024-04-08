@@ -20,6 +20,7 @@ document.getElementById("artist-input").addEventListener("keypress", function(ev
 });
 
 //for left arrow in favorite artist page
-document.getElementById("leftArrow").addEventListener("click", function() {
+const leftArrow = document.querySelector('#leftArrow');
+  leftArrow.addEventListener("click", function() {
   this.style.transform = "translateX(-100px)";
 });
