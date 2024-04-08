@@ -3,9 +3,7 @@
 * {
 	box-sizing: border-box;
 }
-.main-header{
-  height: 50vh;
-}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -99,57 +97,3 @@ section{
 	color: #4CAF50;
 	text-decoration: none;
 }
-
-@media(max-width:768px){
-  .main-header{
-    margin-bottom: 250px;
-  }
-  .hamburger{
-      display: block;
-      padding-top: 10px;
-      padding-right: 10px;
-    }
-    .about-us-header{
-      font-size: 3em;
-      text-align: center;
-    }
-    .header-content
-  {
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-  }
-    .hamburger.active .bar:nth-child(2)
-    {
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1)
-    {
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3)
-    {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-    .nav-content{
-      position: fixed;
-      top: 0;
-      left: -100%;
-      gap: 0;
-      flex-direction: column;
-      gap: 0;
-      background-color: rgba(0,0,0, 0.4);
-      width: 100%;
-      transition: 0.5s;
-    }
-    .nav-item{
-      margin: 4px 0;
-    }
-    section{
-    margin-bottom: 10px;
-    }
-    .container{
-      width:300px;
-    }
-  }
