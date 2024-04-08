@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 .main-header{
-  height: 10vh;
+  height: 50vh;
 }
 body {
 	display: flex;
@@ -142,5 +142,8 @@ section{
     }
     .nav-item{
       margin: 4px 0;
+    }
+    .container{
+      width:300px;
     }
   }
