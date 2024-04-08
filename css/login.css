@@ -9,7 +9,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	height: 90vh;
 	margin: 0;
 	background-image: url(/images/header-img.jpeg);
@@ -101,6 +101,9 @@ section{
 }
 
 @media(max-width:768px){
+  .main-header{
+    margin-bottom: 250px;
+  }
   .hamburger{
       display: block;
       padding-top: 10px;
@@ -142,6 +145,9 @@ section{
     }
     .nav-item{
       margin: 4px 0;
+    }
+    section{
+    margin-bottom: 10px;
     }
     .container{
       width:300px;
