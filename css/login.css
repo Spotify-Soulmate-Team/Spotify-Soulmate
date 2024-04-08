@@ -99,3 +99,8 @@ section{
 	color: #4CAF50;
 	text-decoration: none;
 }
+@media (max-width:768px) {
+  .main-header{
+    margin-bottom: 230px;
+  }
+}
