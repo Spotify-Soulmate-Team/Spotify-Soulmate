@@ -64,7 +64,7 @@ body {
 }
 
 .nav-item:hover::after {
-  width: 100%; /* Set the width to 100% when hovering */
+  width: 100%; 
 }
 
 section{
@@ -171,77 +171,4 @@ select.input-field {
 .login-option a {
 	color: #4CAF50;
 	text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .nav-content {
-    display: none;
-  
-  }
-
-
-@media only screen and (max-width: 768px) {
-  .hamburger{
-    display: block;
-    padding-top: 10px;
-    padding-right: 10px;
-  }
-  .hamburger.active .bar:nth-child(2)
-      {
-        opacity: 0;
-      }
-      .hamburger.active .bar:nth-child(1)
-      {
-        transform: translateY(8px) rotate(45deg);
-      }
-      .hamburger.active .bar:nth-child(3)
-      {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-  .nav-content {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .bar {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .container {
-    padding: 20px;
-  }
-
-  .signup-form {
-    max-width: 100%;
-  }
-
-  .input-container {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .input-label {
-    margin-bottom: 5px;
-  }
-
-  .signup-button {
-    width: 100%;
-  }
-
-  .login-option {
-    text-align: center;
-  }
-}
 }
