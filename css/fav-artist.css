@@ -122,7 +122,11 @@ body{
   flex-direction: column;
   justify-content: center;
   width: 300px;
-  padding: 0.2em;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  transition: all 0.3s ease;
 }
 .concert-info{
   text-align: center;
@@ -130,6 +134,10 @@ body{
   font-size: 1.4em;
   padding: 0.5em;
 }
+.concert:hover {
+  transform: scale(1.05);
+}
+
 
 .date-day{
   margin: 0;
@@ -160,4 +168,51 @@ body{
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-section {
+    text-align: center;
+  }
+
+  .artist-intro,
+  .artist-desc,
+  .artist-nickname {
+    font-size: 1.2em;
+  }
+
+  .match {
+    margin-bottom: 20px;
+  }
+
+  .matches-div {
+    padding: 0 10px;
+  }
+
+  .match-profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .concert-section {
+    text-align: center;
+  }
+
+  .concert {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .concert-info {
+    font-size: 0.9em;
+  }
+
+  .concert-date {
+    font-size: 1.5em;
+  }
+
+  .tickets-link {
+    display: block;
+    margin-top: 10px;
+  }
 }
