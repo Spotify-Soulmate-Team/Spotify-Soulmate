@@ -171,6 +171,19 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
+  .header-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/images/Drake.webp);
+    background-size:cover;
+    background-repeat: none;
+    background-position: center;
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px 100px;
+    padding-top: 150px;
+  }
   .header-section {
     text-align: center;
   }
@@ -184,8 +197,16 @@ body{
   .match {
     margin-bottom: 20px;
   }
-
+  .matches-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+  }
   .matches-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 0 10px;
   }
 
@@ -193,8 +214,13 @@ body{
     width: 100px;
     height: 100px;
   }
-
+  .concert-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   .concert-section {
+    height: auto;
     text-align: center;
   }
 
