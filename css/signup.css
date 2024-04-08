@@ -7,7 +7,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	height: 140vh;
 	padding-bottom: 50px;
 	margin: 0;
@@ -171,9 +171,4 @@ select.input-field {
 .login-option a {
 	color: #4CAF50;
 	text-decoration: none;
-}
-@media (max-width:768px) {
-  .main-header{
-    margin-bottom: 230px;
-  }
 }

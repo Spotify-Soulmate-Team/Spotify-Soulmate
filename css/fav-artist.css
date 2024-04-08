@@ -134,10 +134,6 @@ body{
   font-size: 1.4em;
   padding: 0.5em;
 }
-.concert:hover {
-  transform: scale(1.05);
-}
-
 
 .date-day{
   margin: 0;
@@ -168,77 +164,4 @@ body{
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
-}
-
-@media only screen and (max-width: 768px) {
-  .header-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/images/Drake.webp);
-    background-size:cover;
-    background-repeat: none;
-    background-position: center;
-    color: white;
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0px 100px;
-    padding-top: 150px;
-  }
-  .header-section {
-    text-align: center;
-  }
-
-  .artist-intro,
-  .artist-desc,
-  .artist-nickname {
-    font-size: 1.2em;
-  }
-
-  .match {
-    margin-bottom: 20px;
-  }
-  .matches-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: auto;
-  }
-  .matches-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 10px;
-  }
-
-  .match-profile-pic {
-    width: 100px;
-    height: 100px;
-  }
-  .concert-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .concert-section {
-    height: auto;
-    text-align: center;
-  }
-
-  .concert {
-    width: 90%;
-    margin: 0 auto 20px;
-  }
-
-  .concert-info {
-    font-size: 0.9em;
-  }
-
-  .concert-date {
-    font-size: 1.5em;
-  }
-
-  .tickets-link {
-    display: block;
-    margin-top: 10px;
-  }
 }

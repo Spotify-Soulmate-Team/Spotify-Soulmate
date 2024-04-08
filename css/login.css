@@ -3,13 +3,11 @@
 * {
 	box-sizing: border-box;
 }
-.main-header{
-  height: 90vh;
-}
+
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	height: 90vh;
 	margin: 0;
 	background-image: url(/images/header-img.jpeg);
@@ -98,9 +96,4 @@ section{
 .signup-option a {
 	color: #4CAF50;
 	text-decoration: none;
-}
-@media (max-width:768px) {
-  .main-header{
-    margin-bottom: 230px;
-  }
 }
