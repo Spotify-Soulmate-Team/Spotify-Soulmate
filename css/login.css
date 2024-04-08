@@ -143,4 +143,10 @@ section{
     .nav-item{
       margin: 4px 0;
     }
+    .nav-item{
+      margin: 4px 0;
+    }
+    .nav-content.active{
+      left: 0;
+    }
   }
