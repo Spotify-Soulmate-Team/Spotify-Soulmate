@@ -137,8 +137,6 @@ body{
 .concert:hover {
   transform: scale(1.05);
 }
-
-
 .date-day{
   margin: 0;
   padding: 0;
@@ -199,7 +197,7 @@ body{
   }
 
   .concert {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 20px;
   }
 
