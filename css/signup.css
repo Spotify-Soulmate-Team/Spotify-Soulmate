@@ -41,17 +41,13 @@ body {
   color: white;
   text-decoration: none;
 }
-
-
 .nav a:active{
   opacity: 0.5;
 }
-
 .nav-item {
   position: relative;
   text-decoration: none; 
 }
-
 .nav-item::after {
   content: "";
   position: absolute;
@@ -62,17 +58,14 @@ body {
   background: white;
   transition: width 0.25s ease-out; 
 }
-
 .nav-item:hover::after {
   width: 100%; /* Set the width to 100% when hovering */
 }
-
 section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 .container {
   height: auto;
 	width: 400px;
@@ -152,12 +145,6 @@ section{
 }
 
 select.input-field {
-	appearance: none;
-	-webkit-appearance: none;
-	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'><polygon points='0,0 14,0 7,8'/></svg>");
-	background-repeat: no-repeat;
-	background-position: right 10px center;
-	background-size: 12px;
 	padding-right: 30px;
 }
 
@@ -175,49 +162,55 @@ select.input-field {
 
 
 @media only screen and (max-width: 768px) {
-  .main-header{
-    margin-bottom: 230px;
-  }
   .hamburger{
     display: block;
     padding-top: 10px;
     padding-right: 10px;
   }
+  .website-name{
+    font-size: 3em;
+    text-align: center;
+  }
+  .header-content
+{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
   .hamburger.active .bar:nth-child(2)
-      {
-        opacity: 0;
-      }
-      .hamburger.active .bar:nth-child(1)
-      {
-        transform: translateY(8px) rotate(45deg);
-      }
-      .hamburger.active .bar:nth-child(3)
-      {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-  .nav-content {
-    display: none;
+  {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1)
+  {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3)
+  {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
-  .hamburger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .bar {
-    display: block;
+  .nav-content{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: rgba(0,0,0, 0.4);
     width: 100%;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: all 0.3s ease-in-out;
+    transition: 0.5s;
   }
-
-  .container {
+  .nav-item{
+    margin: 4px 0;
+  }
+  .nav-content.active{
+    left: 0;
+  }
+    .container {
     padding: 20px;
+    width:300px;
+    font-size: 0.8em;
   }
 
   .signup-form {
@@ -239,9 +232,5 @@ select.input-field {
 
   .login-option {
     text-align: center;
-  }
-  .container{
-    width:300px;
-    font-size: 0.8em;
   }
 }
