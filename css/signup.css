@@ -161,22 +161,28 @@ select.input-field {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media(max-width: 768px) {
+  body{
+    height: auto;
+  }
+  .main-header{
+    height: 300px;
+  }
   .hamburger{
     display: block;
-    padding-top: 10px;
     padding-right: 10px;
+    margin-top: 10px;
   }
   .website-name{
     font-size: 3em;
     text-align: center;
   }
   .header-content
-{
-  text-align: center;
-  font-size: 1.5em;
-  color: white;
-}
+  {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
   .hamburger.active .bar:nth-child(2)
   {
     opacity: 0;
@@ -207,7 +213,7 @@ select.input-field {
   .nav-content.active{
     left: 0;
   }
-    .container {
+  .container {
     padding: 20px;
     width:300px;
     font-size: 0.8em;
