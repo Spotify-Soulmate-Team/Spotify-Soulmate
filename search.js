@@ -3,8 +3,8 @@ const suggestionsList = document.getElementById('suggestions');
 
 
 const suggestions = [
-  'drake',
-  'taylor swift',
+  'Drake',
+  'Taylor swift',
   'The weekend'
 ];
 
