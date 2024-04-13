@@ -1,5 +1,6 @@
 const searchInput = document.getElementById('artist-input');
 const suggestionsList = document.getElementById('suggestions');
+const searchContainer = document.getElementById('search-container');
 
 document.getElementById("artist-input").addEventListener("keypress", function(event) {
   if (event.keyCode === 13) {
@@ -31,7 +32,6 @@ function showSuggestions(filteredSuggestions) {
     suggestionsList.appendChild(li);
   });
 }
-
 
 searchInput.addEventListener('input', function() {
   const input = this.value;
