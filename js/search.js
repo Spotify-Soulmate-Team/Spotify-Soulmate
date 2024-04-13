@@ -10,8 +10,8 @@ document.getElementById("artist-input").addEventListener("keypress", function(ev
 });
 
 const suggestions = [
-  'drake',
-  'taylor swift',
+  'Drake',
+  'Taylor swift',
   'The weekend'
 ];
 
