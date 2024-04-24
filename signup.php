@@ -29,7 +29,7 @@
 		</header>
 		<section>
 	<div class="container">
-		<form class="signup-form">
+		<form class="signup-form" action="test.php" method="post">
 			<h2 style="color: white;">Sign Up</h2>
 			<div class="input-container">
         <label class="input-label">First Name</label>
@@ -43,6 +43,12 @@
         <label class="input-label">Email</label>
 				<input type="email" class="input-field" required>
 			</div>
+
+			<div class="input-container">
+				<label class="input-label password">Password</label>
+				<input type="password" class="input-field" required>
+			</div>
+
 			<div class="input-container">
         <label class="input-label">Gender</label>
 				<select class="input-field" required>
@@ -60,6 +66,7 @@
 				<label class="input-label upload-photo">Upload Photo</label>
 				<input type="file" class="input-field" required>
 			</div>
+
 			<button type="submit" class="signup-button">Sign Up</button>
 		</form>
 		<p class="login-option">Already have an account? <a href="login.html">Log in</a></p>
