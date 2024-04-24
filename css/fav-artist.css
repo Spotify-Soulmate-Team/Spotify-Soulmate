@@ -165,3 +165,76 @@ body{
   color: white;
   border-bottom: 1px solid white;
 }
+/* Base styles above */
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-size: cover;
+  }
+
+  .header-div, .nickname-div {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .artist-desc {
+    font-size: 3em;
+  }
+  .matches-section{
+    height: 100%;
+  }
+  .matches-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .concert-section
+  {
+    height: 100%;
+  }
+  .concert-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .concert {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    font-size: 2em;
+    padding-left: 20px;
+  }
+
+  .header-section {
+    padding-top: 50px;
+  }
+
+  .artist-desc {
+    font-size: 2em;
+  }
+
+  .match-heading {
+    font-size: 2em;
+  }
+
+  .concert-date {
+    font-size: 3em;
+  }
+
+  .concert-info {
+    font-size: 1em;
+  }
+}
+
