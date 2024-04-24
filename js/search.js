@@ -5,21 +5,21 @@ const searchContainer = document.getElementById('search-container');
 var lists = suggestionsList.getElementsByTagName("li");
 
 
-
-// //adding an event listner to the element then excuting a function when pressing enter
-// document.getElementById("artist-input").addEventListener("keypress", function(event) {
-//   if (event.keyCode === 13) {
-//     var userInput = document.getElementById("artist-input").value;
-
-//     window.location.href = "fav-artist.html?input=" + userInput;
-//   }
-// });
-//Array of suggestions
-// const suggestions = [
-//   'Drake',
-//   'Taylor swift',
-//   'The weekend'
-// ];
+/*
+ //adding an event listner to the element then excuting a function when pressing enter
+ document.getElementById("artist-input").addEventListener("keypress", function(event) {
+   if (event.keyCode === 13) {
+     var userInput = document.getElementById("artist-input").
+     window.location.href = "fav-artist.html?input=" + userInput;
+   }
+ });
+Array of suggestions
+ const suggestions = [
+   'Drake',
+   'Taylor swift',
+   'The weekend'
+ ];
+ */
 
 //adding an event listener to the element then executing a function when pressing enter
 document.getElementById("artist-input").addEventListener("keypress", function(event) {
@@ -32,7 +32,7 @@ document.getElementById("artist-input").addEventListener("keypress", function(ev
     } else {
       // Handle case where input does not match any suggestion
       // For now, redirect to a default page
-      window.location.href = 'index.html';
+      window.location.href = 'index.html#artist-input';
     }
   }
 });
