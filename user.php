@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 $servername = "localhost";
 $username = "root"; 
 $password = ""; 
@@ -51,6 +53,7 @@ if (isset($_SERVER['HTTP_REFERER'])) {
             $password = isset($_POST['password']) ? $conn->real_escape_string($_POST['password']) : '';
             $gender = isset($_POST['gender']) ? $conn->real_escape_string($_POST['gender']) : '';
             $favorite_artist = isset($_POST['favorite_artist']) ? $conn->real_escape_string($_POST['favorite_artist']) : '';
+            $_SESSION['user_email']= $_POST['email'];
         
             if ($password && $gender) {
                 $password_hashed = password_hash($password, PASSWORD_DEFAULT);
@@ -61,6 +64,7 @@ if (isset($_SERVER['HTTP_REFERER'])) {
                 
                 if ($stmt->execute()) {
                     echo "New record created successfully";
+                    setcookie('signup_status', 'success', time()+(86400 * 30),"/");
                 } else {
                     echo "Error: " . $stmt->error;
                 }
@@ -89,7 +93,8 @@ if (isset($_SERVER['HTTP_REFERER'])) {
                 if (password_verify($password, $hashed_password)) {
                     echo "Login successful!";
                     $_SESSION['user_email'] = $email; 
-
+                    setcookie('login_status', 'logged_in', time() + (86400 * 30), "/");
+                    header("Location: index.php");
                     header("Location: index.php");
                 } else {
                     echo "Invalid email or password";
