@@ -58,6 +58,7 @@ if (isset($_SERVER['HTTP_REFERER'])) {
                 $sql = "INSERT INTO users (first_name, last_name, email, password, gender, favorite_artist) VALUES (?, ?, ?, ?, ?, ?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->bind_param("ssssss", $first_name, $last_name, $email, $password_hashed, $gender, $favorite_artist);
+                header("Location: index.php");
                 
                 if ($stmt->execute()) {
                     echo "New record created successfully";
