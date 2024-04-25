@@ -9,9 +9,14 @@ $loginURL = "http://localhost/Spotify-Soulmate/login.php";
 $signupURL = "http://localhost/Spotify-Soulmate/signup.php";
 $conn = new mysqli($servername, $username, $password);
 
+$cookie_accepted = isset($_COOKIE['cookie_accepted']);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+}
+if ($cookie_accepted) {
+    setcookie('login_status', 'logged_in', time() + (86400 * 30), "/"); 
+    setcookie('signup_status', 'success', time() + (86400 * 30), "/"); 
 }
 
 
