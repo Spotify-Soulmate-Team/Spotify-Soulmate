@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/css/signup.css">
+	<link rel="stylesheet" href="/css/signup.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,38 +29,38 @@
 		</header>
 		<section>
 	<div class="container">
-		<form class="signup-form" action="test.php" method="post">
+		<form class="signup-form" action="user.php" method="post">
 			<h2 style="color: white;">Sign Up</h2>
 			<div class="input-container">
         <label class="input-label">First Name</label>
-				<input type="text" class="input-field" required>
+				<input type="text" class="input-field" name="first_name" required>
 			</div>
 			<div class="input-container">
         <label class="input-label">Last Name</label>
-				<input type="text" class="input-field" required>
+				<input type="text" class="input-field" name="last_name" required>
 			</div>
 			<div class="input-container">
         <label class="input-label">Email</label>
-				<input type="email" class="input-field" required>
+				<input type="email" class="input-field" name="email" required>
 			</div>
 
 			<div class="input-container">
 				<label class="input-label password">Password</label>
-				<input type="password" class="input-field" required>
+				<input type="password" class="input-field" name="password" required>
 			</div>
 
 			<div class="input-container">
         <label class="input-label">Gender</label>
-				<select class="input-field" required>
+				<select class="input-field" name="gender" required>
 					<option value="" disabled selected hidden class="gender-opt">Gender</option>
-					<option value="male" class="gender-opt">Male</option>
+					<option value="male" class="gender-opt" >Male</option>
 					<option value="female" class="gender-opt">Female</option>
-					<option value="other" class="gender-opt">Other</option>
+					<option value="other" class="gender-opt" >Other</option>
 				</select>
 			</div>
 			<div class="input-container">
         <label class="input-label">Favorite Artist</label>
-				<input type="text" class="input-field" required>
+				<input type="text" class="input-field" name="favorite_artist"required>
 			</div>
 			<div class="input-container">
 				<label class="input-label upload-photo">Upload Photo</label>
