@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/signup.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <script src="/js/script.js" defer></script>
   <title>Spotify Soulmate | Signup</title>
+	<script src="js/script.js" defer></script>
 </head>
 <body>
+
 	<header class="main-header">
     <nav class="nav main-nav">
-			<div class="nav-content">
-				<a href="index.html" class="nav-item"><p> HOME </span> </p></a>
-				<a href="about.html" class="nav-item"><p> ABOUT US </p></a>
-				<a href="login.html" class="nav-item"><p> LOGIN </p></a>
-				<a href="signup.html" class="nav-item"><p> SIGN UP </p></a>
-			</div>
-			<div class="hamburger">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-		</nav>
+      <div class="nav-content">
+        <a href="index.html" class="nav-item"><p> HOME </span> </p></a>
+        <p class="splitter"> | </p>
+        <a href="about.html" class="nav-item"><p> ABOUT US </p></a>
+        <p class="splitter"> | </p>
+      </div>
+      <div class="nav-content">
+        <a href="login.html" class="nav-item"><p> LOGIN </p></a>
+        <p class="splitter"> | </p>
+        <a href="signup.html" class="nav-item"><p> SIGN UP </p></a>
+      </div>
+    </nav>
+		</header>
 		</header>
 		<section>
 	<div class="container">
-		<form class="signup-form">
+		<form class="signup-form" action="user.php" method="post">
 			<h2 style="color: white;">Sign Up</h2>
 			<div class="input-container">
         <label class="input-label">First Name</label>
-				<input type="text" class="input-field" required>
+				<input type="text" class="input-field" name="first_name" required>
 			</div>
 			<div class="input-container">
         <label class="input-label">Last Name</label>
-				<input type="text" class="input-field" required>
+				<input type="text" class="input-field" name="last_name" required>
 			</div>
 			<div class="input-container">
         <label class="input-label">Email</label>
-				<input type="email" class="input-field" required>
+				<input type="email" class="input-field" name="email" required>
 			</div>
+
+			<div class="input-container">
+				<label class="input-label password">Password</label>
+				<input type="password" class="input-field" name="password" required>
+			</div>
+
 			<div class="input-container">
         <label class="input-label">Gender</label>
-				<select class="input-field" required>
+				<select class="input-field" name="gender" required>
 					<option value="" disabled selected hidden class="gender-opt">Gender</option>
-					<option value="male" class="gender-opt">Male</option>
+					<option value="male" class="gender-opt" >Male</option>
 					<option value="female" class="gender-opt">Female</option>
-					<option value="other" class="gender-opt">Other</option>
+					<option value="other" class="gender-opt" >Other</option>
 				</select>
 			</div>
 			<div class="input-container">
         <label class="input-label">Favorite Artist</label>
-				<input type="text" class="input-field" required>
+				<input type="text" class="input-field" name="favorite_artist"required>
 			</div>
 			<div class="input-container">
 				<label class="input-label upload-photo">Upload Photo</label>
 				<input type="file" class="input-field" required>
 			</div>
+
 			<button type="submit" class="signup-button">Sign Up</button>
 		</form>
 		<p class="login-option">Already have an account? <a href="login.html">Log in</a></p>
