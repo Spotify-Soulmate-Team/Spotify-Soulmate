@@ -210,7 +210,288 @@ body{
 
 }
 
-@media(max-width:768px)
+body{
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+}
+.arrow
 {
+  font-size: 3em;
+  color: white;
+  margin: 0;
+  margin-bottom: -60px;
+  padding-left: 50px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.arrow-link{
+  text-decoration: none;
+}
+/* .header-section{ */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/abel.jpg"), url("/images/taylor.jpg"), url("/images/drake.webp");
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 100px;
+  padding-top: 150px; */
+/* } */
+
+.header-div{
+  max-width: 650px;
+}
+
+.nickname-div{
+  margin-top: 150px;
+}
+
+.artist-intro{
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.artist-desc{
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.artist-nickname{
+  text-align: left;
+}
+
+.matches-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #121212;
+  color: white;
+  padding: 0px 50px;
+}
+
+.match-heading{
+  font-size: 2.5em;
+}
+.matches-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.match{
+  width: 230px;
+  height: 300px;
+  padding: 0.5em;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.match-list{
+  list-style-type: none;
+  padding: 0.3em;
+}
+.photo-username-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.match-profile-pic{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: flex-start;
+}
+.concert-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding: 20px 50px;
+  height: 100vh;
+}
+.concert-date{
+  text-align: center;
+  font-size: 4.5em;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.concert-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.concert{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+.concert:hover{
+  transform: translateY(-50px);
+}
+.concert-info{
+  text-align: center;
+  margin: 0.5em;
+  font-size: 1.4em;
+  padding: 0.5em;
+}
+
+.date-day{
+  margin: 0;
+  padding: 0;
+  font-size: 1.7em;
+}
+.date{
+  margin: 0;
+  padding: 0;
+  padding-bottom:0.6em ;
+  margin-bottom:0.6em ;
+  font-size: 3.5em;
+}
+.city-location{
+  border-bottom: 1px solid white;
+}
+
+.time,.location{
+  margin: 0.15em;
+  padding: 0.15em;
+}
+.location{
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid white;
+}
+
+.tickets-link{
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+#idtaylor{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/taytay.jpg");
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 100px;
+  padding-top: 150px;
+  padding-bottom: 0;
   
+}
+#iddrake{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/Drake.webp");
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 100px;
+  padding-top: 150px;
+}
+
+#idtheweeknd{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/abel.jpg");
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 100px;
+  padding-top: 150px;
+
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-size: cover;
+  }
+
+  .header-div, .nickname-div {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .artist-desc {
+    font-size: 3em;
+  }
+  .matches-section{
+    height: 100%;
+  }
+  .matches-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .concert-section
+  {
+    height: 100%;
+  }
+  .concert-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .concert {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    font-size: 2em;
+    padding-left: 20px;
+  }
+
+  .header-section {
+    padding-top: 50px;
+  }
+
+  .artist-desc {
+    font-size: 2em;
+  }
+
+  .match-heading {
+    font-size: 2em;
+  }
+
+  .concert-date {
+    font-size: 3em;
+  }
+
+  .concert-info {
+    font-size: 1em;
+  }
 }
